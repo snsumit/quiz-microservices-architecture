@@ -50,5 +50,5 @@ A full-stack Quiz Application built using **Spring Boot Microservices**, **API G
 
 ```bash
 git clone https://github.com/snsumit/quiz-microservices-architecture.git
-cd quiz-microservices-architecture/microservices
+cd quiz-microservices-architecture
 sudo docker compose up --build
