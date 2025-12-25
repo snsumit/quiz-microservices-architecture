@@ -62,8 +62,8 @@ services:
     image: mysql:8.0
     container_name: quiz-db
     environment:
-      MYSQL_ROOT_PASSWORD: root@12345
-      MYSQL_DATABASE: microQuizdb
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: ${QUIZ_DB_NAME}
     ports:
       - "3307:3306"
     networks:
@@ -73,8 +73,8 @@ services:
     image: mysql:8.0
     container_name: question-db
     environment:
-      MYSQL_ROOT_PASSWORD: root@12345
-      MYSQL_DATABASE: questiondb
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: ${QUESTION_DB_NAME}
     ports:
       - "3308:3306"
     networks:
